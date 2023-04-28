@@ -46,6 +46,7 @@ function displayQuestion() {
         choices.appendChild(optionButton);
 
         optionButton.addEventListener("click", function () {
+            
             if (this.textContent === answer1) {
                 console.log("correct");
             } else {
