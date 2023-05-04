@@ -8,20 +8,12 @@ var choices = document.querySelector('.choices')
 var secondsLeft = 90;
 //function
 var questions = [{question:'How do you alert people in JavaScript?', choices:['boolean', 'numbers', 'string', 'alert'], answer:'alert'},
-{question:'What is a string in code?'},
-{question:'How do you alert people in JavaScript?'}];
+{question:'What is a string in code?', choices:['rope', 'words', 'thread', 'yarn'], answer: "words"}
+{question:'What is it called when you add objects inside quotes?', choices: ['boolean', 'numbers', 'string', 'alert'], answer: "string"}];
 
 //put arrays within the object
 //manually change iterator (increment i, when the question is complete)
 //json is js object notation: browser storage (parse and convert it to native js object, so its easier to read)
-
-var questions2 = 'What is a string in code?'
-var options2 = ['rope', 'words', 'thread', 'yarn'];
-var answer = "words"
-
-var questions3 = 'How do you alert people in JavaScript?'
-var options3 = ['boolean', 'numbers', 'string', 'alert'];
-var answer = "alert"
 
 function startTimer() {
     //timer goes here 09 seconds left
