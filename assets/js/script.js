@@ -7,9 +7,13 @@ var choices = document.querySelector('.choices')
 //timer starts function, questions displayed function, click event
 var secondsLeft = 90;
 //function
-var questions1 = 'How do you alert people in JavaScript?'
-var options1 = ['boolean', 'numbers', 'string', 'alert'];
-var answer1 = "alert"
+var questions = [{question:'How do you alert people in JavaScript?', choices:['boolean', 'numbers', 'string', 'alert'], answer:'alert'},
+{question:'What is a string in code?'},
+{question:'How do you alert people in JavaScript?'}];
+
+//put arrays within the object
+//manually change iterator (increment i, when the question is complete)
+//json is js object notation: browser storage (parse and convert it to native js object, so its easier to read)
 
 var questions2 = 'What is a string in code?'
 var options2 = ['rope', 'words', 'thread', 'yarn'];
@@ -39,7 +43,7 @@ function displayQuestion() {
 
     questionContainer.classList.remove("hide")
 
-    question.textContent = questions1;
+    question.textContent = questions[i];
     for (var i = 0; i < options1.length; i++) {
         var optionButton = document.createElement("button");
         optionButton.textContent = options1[i];
